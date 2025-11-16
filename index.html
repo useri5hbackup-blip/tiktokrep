@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TikTok Replica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Top navigation -->
+    <header class="top-nav">
+      <div class="logo">MyTok</div>
+      <nav>
+        <a href="#" class="nav-link active">For You</a>
+        <a href="#" class="nav-link">Following</a>
+      </nav>
+    </header>
+
+    <!-- Video feed container -->
+    <main class="feed">
+      <!-- Single video item -->
+      <section class="video-card">
+        <video class="video-player" src="videos/sample1.mp4" loop></video>
+
+        <!-- Right sidebar: like/comment/share -->
+        <div class="video-sidebar">
+          <img src="images/avatar1.jpg" class="avatar" alt="user" />
+          <button class="icon-btn like-btn">❤</button>
+          <span class="count">12.3K</span>
+
+          <button class="icon-btn comment-btn">💬</button>
+          <span class="count">234</span>
+
+          <button class="icon-btn share-btn">↗</button>
+          <span class="count">89</span>
+        </div>
+
+        <!-- Bottom info: username, caption, sound -->
+        <div class="video-footer">
+          <div class="video-text">
+            <h3 class="username">@user1</h3>
+            <p class="caption">This is a cool demo video #tiktokclone</p>
+            <p class="sound">🎵 Original sound - Demo artist</p>
+          </div>
+          <div class="spinning-disc"></div>
+        </div>
+      </section>
+
+      <!-- Duplicate and change src/usernames to add more videos -->
+      <section class="video-card">
+        <video class="video-player" src="videos/sample2.mp4" loop></video>
+        <div class="video-sidebar">
+          <img src="images/avatar2.jpg" class="avatar" alt="user" />
+          <button class="icon-btn like-btn">❤</button>
+          <span class="count">8.1K</span>
+
+          <button class="icon-btn comment-btn">💬</button>
+          <span class="count">120</span>
+
+          <button class="icon-btn share-btn">↗</button>
+          <span class="count">45</span>
+        </div>
+        <div class="video-footer">
+          <div class="video-text">
+            <h3 class="username">@user2</h3>
+            <p class="caption">Another awesome clip 👀</p>
+            <p class="sound">🎵 Remix - DJ Example</p>
+          </div>
+          <div class="spinning-disc"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom navigation bar -->
+    <footer class="bottom-nav">
+      <button class="bottom-btn">Home</button>
+      <button class="bottom-btn">Discover</button>
+      <button class="bottom-btn upload-btn">＋</button>
+      <button class="bottom-btn">Inbox</button>
+      <button class="bottom-btn">Profile</button>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
